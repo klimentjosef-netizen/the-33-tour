@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 33 Tour – Pepča Kliment</title>
+<meta name="description" content="The 33 Tour – Pepča Kliment slaví 33. narozeniny. 28. března 2026, Ostrava &amp; Katowice. Brunch, Padel Tournament, Night Cap.">
+<meta property="og:title" content="The 33 Tour – Pepča Kliment">
+<meta property="og:description" content="Pepča slaví 33. narozeniny. Tři zastávky, jeden legendární den. 28. března 2026.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- BACK NAV -->
+<button class="back-nav" id="backNav" onclick="goBack()">Zpět</button>
+
+<!-- PROGRESS DOTS -->
+<div class="progress" id="progress">
+  <div class="dot active" data-screen="1"></div>
+  <div class="dot" data-screen="2"></div>
+  <div class="dot" data-screen="3"></div>
+  <div class="dot" data-screen="4"></div>
+  <div class="dot" data-screen="5"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 1 – VYVOLENÝ
+══════════════════════════════════════ -->
+<div class="screen active" id="s1">
+  <div class="screen-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+  </div>
+  <div class="s1-number">33</div>
+  <div class="s1-content">
+    <div class="s1-tag a1">Přísně důvěrné</div>
+    <div class="big-title a2">Byl jsi<br><em>vybrán.</em></div>
+    <div class="s1-date a3">28. března 2026</div>
+    <div class="s1-location a3">Ostrava &amp; Katowice</div>
+    <div class="s1-quote a4">„Chci prožít tento den s lidmi,<br>kteří mi to stojí za to. Zatím."</div>
+    <div class="s1-byline a4">— Pepča Kliment, 33 let, celkem v pohodě</div>
+    <button class="btn a5" onclick="goTo(2)">Přijmout misi</button>
+    <div class="a5" style="margin-top:16px;">
+      <button class="btn-ghost" onclick="goTo(5)" style="font-size:11px;letter-spacing:3px;">Už jsem zaregistrován &rarr; chci vidět seznam</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 2 – BRIEFING
+══════════════════════════════════════ -->
+<div class="screen" id="s2">
+  <div class="screen-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+  </div>
+  <div class="s2-content">
+    <div class="eyebrow a1">— Briefing —</div>
+    <div class="big-title a2" style="font-size:clamp(36px,7vw,78px);">O koho<br><em>vlastně jde?</em></div>
+    <p class="body-text a3">
+      <strong>Pepča Kliment.</strong> Táta, manžel, padel hráč a celoživotní Gunner.
+      Přes týden pomáhá majitelům firem prodat jejich životní dílo za maximální hodnotu,
+      přes víkend hraje padel a optimisticky sleduje Arsenal.
+    </p>
+    <p class="body-text a3">
+      Humor má tak plochý, že ho polovina nepochopí a druhá polovina předstírá, že ano.
+      Žádná krize středního věku. Jen větší party rozložená přes celý den a dvě země.
+    </p>
+    <div class="s2-facts a4">
+      <div class="s2-fact">
+        <span class="s2-fact-num">33</span>
+        <span class="s2-fact-lbl">Roků</span>
+      </div>
+      <div class="s2-fact">
+        <span class="s2-fact-num">28/3</span>
+        <span class="s2-fact-lbl">Datum</span>
+      </div>
+      <div class="s2-fact">
+        <span class="s2-fact-num">3</span>
+        <span class="s2-fact-lbl">Zastávky</span>
+      </div>
+      <div class="s2-fact">
+        <span class="s2-fact-num">2</span>
+        <span class="s2-fact-lbl">Země</span>
+      </div>
+    </div>
+    <button class="btn a5" onclick="goTo(3)">Zobrazit program</button>
+    <button class="bottom-back a5" onclick="goTo(1)">← zpět</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 3 – THE TOUR
+══════════════════════════════════════ -->
+<div class="screen" id="s3">
+  <div class="screen-bg">
+    <div class="orb orb1"></div>
+  </div>
+  <div class="s3-content">
+    <div class="eyebrow a1">— Program dne —</div>
+    <div class="big-title a2" style="font-size:clamp(36px,7vw,76px);">The 33 <em>Tour</em></div>
+    <div class="subtitle a2">Sobota 28. března 2026 · Ostrava &amp; Katowice</div>
+    <div class="s3-stops" id="s3stops">
+      <div class="s3-stop">
+        <div class="stop-num">01</div>
+        <div>
+          <div class="stop-date-badge">So 28/3 · Ostrava</div>
+          <div class="stop-time">9:30 – 11:30</div>
+          <div class="stop-name">Brunch</div>
+          <div class="stop-place">CoKafé DOV · Ostrava</div>
+        </div>
+      </div>
+      <div class="s3-stop">
+        <div class="stop-num">02</div>
+        <div>
+          <div class="stop-date-badge">So 28/3 · Katowice</div>
+          <div class="stop-time">15:00 – 18:00</div>
+          <div class="stop-name">Padel Tournament</div>
+          <div class="stop-place">Padel Academy · Katowice</div>
+        </div>
+      </div>
+      <div class="s3-stop">
+        <div class="stop-num">03</div>
+        <div>
+          <div class="stop-date-badge">So 28/3 · Ostrava</div>
+          <div class="stop-time">20:00 – 00:00</div>
+          <div class="stop-name">Night Cap</div>
+          <div class="stop-place">Nová Plzeňka · Nové Lauby · Ostrava</div>
+        </div>
+      </div>
+    </div>
+    <div class="a6" style="text-align:center;">
+      <button class="btn" onclick="goTo(4)">Přihlásit se</button>
+      <button class="bottom-back" onclick="goTo(2)">← zpět</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 4 – REGISTRACE
+══════════════════════════════════════ -->
+<div class="screen" id="s4">
+  <div class="screen-bg">
+    <div class="orb orb1"></div>
+  </div>
+  <div class="s4-content">
+    <div class="eyebrow a1">— Registrace · do 10. března 2026 —</div>
+    <div class="big-title a2" style="font-size:clamp(30px,6vw,60px);margin-bottom:28px;">Přihlas se<br><em>na tour</em></div>
+
+    <div class="form-section a3">
+      <label class="form-label">Jméno</label>
+      <div id="namesInputs">
+        <input type="text" class="name-input" placeholder="Tvoje jméno…" autocomplete="off"/>
+      </div>
+    </div>
+
+    <div class="form-section a3">
+      <label class="form-label">Přijdete víc? Kolik vás bude?</label>
+      <div class="person-count-row">
+        <button type="button" class="cnt-btn" onclick="changeCount(-1)">−</button>
+        <span id="personCount">1</span>
+        <button type="button" class="cnt-btn" onclick="changeCount(1)">+</button>
+      </div>
+    </div>
+
+    <div class="form-section a4">
+      <label class="form-label">Na co přijdete:</label>
+      <div class="stop-choices">
+        <div class="stop-choice" data-part="brunch" onclick="toggleStopChoice(this)">
+          <div class="sc-header">
+            <div class="sc-box"></div>
+            <div>
+              <div class="sc-title">Stop 01 – Brunch</div>
+              <div class="sc-meta">9:30–11:30 · CoKafé DOV · Ostrava</div>
+            </div>
+          </div>
+          <div class="kids-toggle" id="kidsB" onclick="event.stopPropagation();toggleKids(this)">
+            <div class="kt-box"></div>
+            <span>+ přivedu děti</span>
+          </div>
+        </div>
+        <div class="stop-choice" data-part="padel" onclick="toggleStopChoice(this)">
+          <div class="sc-header">
+            <div class="sc-box"></div>
+            <div>
+              <div class="sc-title">Stop 02 – Padel Tournament</div>
+              <div class="sc-meta">15:00–18:00 · Padel Academy Katowice</div>
+            </div>
+          </div>
+          <div class="padel-roles" id="padelRolesContainer"></div>
+          <div class="kids-toggle" id="kidsP" onclick="event.stopPropagation();toggleKids(this)">
+            <div class="kt-box"></div>
+            <span>+ přivedu děti (hlídám sám/a)</span>
+          </div>
+        </div>
+        <div class="stop-choice" data-part="bar" onclick="toggleStopChoice(this)">
+          <div class="sc-header">
+            <div class="sc-box"></div>
+            <div>
+              <div class="sc-title">Stop 03 – Night Cap</div>
+              <div class="sc-meta">20:00–00:00 · Nová Plzeňka · Nové Lauby · Ostrava</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-actions a5">
+      <button class="submit-btn" id="submitBtn" onclick="submitReg()">Přihlásit se na tour</button>
+      <div class="form-msg" id="formMsg"></div>
+      <button class="btn-ghost" onclick="goTo(5)">Vyplním později – chci jen vidět program</button>
+      <button class="btn-decline" onclick="goTo(6)">Děkuji za pozvání, nepřijdu</button>
+      <button class="bottom-back" onclick="goTo(3)">← zpět na program</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 5 – POTVRZENÍ + PŘIHLÁŠENÍ
+══════════════════════════════════════ -->
+<div class="screen" id="s5">
+  <div class="screen-bg">
+    <div class="orb orb1"></div>
+  </div>
+  <div class="s5-content">
+    <div class="s5-check a1">✓</div>
+    <div class="big-title a2" style="font-size:clamp(36px,7vw,78px);">Jsi <em>na palubě.</em></div>
+    <p class="body-text a3">
+      Pepča je potěšen. Nebo aspoň neodmítá tvou přítomnost —
+      to je u něj vlastně dost silné vyjádření sympatie.
+    </p>
+    <div class="att-cols a4">
+      <div class="att-col">
+        <div class="att-col-name">Stop 01 – Brunch</div>
+        <div class="att-col-time">9:30 – 11:30 · Ostrava</div>
+        <div class="att-big-num" id="cntBrunch">–</div>
+        <ul class="att-list" id="lstBrunch"></ul>
+      </div>
+      <div class="att-col">
+        <div class="att-col-name">Stop 02 – Padel</div>
+        <div class="att-col-time">15:00 – 18:00 · Katowice</div>
+        <div class="att-big-num" id="cntPadel">–</div>
+        <ul class="att-list" id="lstPadel"></ul>
+      </div>
+      <div class="att-col">
+        <div class="att-col-name">Stop 03 – Night Cap</div>
+        <div class="att-col-time">20:00 – 00:00 · Ostrava</div>
+        <div class="att-big-num" id="cntBar">–</div>
+        <ul class="att-list" id="lstBar"></ul>
+      </div>
+    </div>
+    <div class="s5-actions a5">
+      <button class="s5-link" onclick="goTo(4)">← Upravit registraci</button>
+      <button class="s5-link" onclick="copyLink()">Sdílet odkaz</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 6 – DĚKUJI ZA POZVÁNÍ
+══════════════════════════════════════ -->
+<div class="screen" id="s6">
+  <div class="screen-bg">
+    <div class="orb orb1"></div>
+  </div>
+  <div class="s6-content">
+    <div class="s6-icon a1">🙏</div>
+    <div class="big-title a2" style="font-size:clamp(36px,7vw,76px);">Škoda<br><em>tě.</em></div>
+    <p class="body-text a3">
+      Pepča to chápe. Nebo předstírá, že chápe —<br>
+      to je u něj celkem to samé.
+    </p>
+    <p class="body-text a3" style="font-size:13px; opacity:.7;">
+      Pokud si to do <strong>10. března</strong> rozmyslíš,<br>
+      odkaz funguje dál.
+    </p>
+    <button class="btn a4" onclick="goTo(4)" style="background:transparent;color:var(--muted);border:1px solid var(--border);letter-spacing:4px;font-size:13px;padding:12px 32px;">
+      No to si děláš srandu ne? To jsi posral! Už nikdy tě nepozvu nikam.
+    </button>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

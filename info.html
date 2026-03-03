@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 33 Tour – Pepča Kliment</title>
+<meta name="description" content="The 33 Tour – Pepča Kliment slaví 33. narozeniny. 28. března 2026, Ostrava &amp; Katowice. Brunch, Padel Tournament, Night Cap.">
+<meta property="og:title" content="The 33 Tour – Pepča Kliment">
+<meta property="og:description" content="Pepča slaví 33. narozeniny. Tři zastávky, jeden legendární den. 28. března 2026.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+
+<!-- DEADLINE BANNER -->
+<div class="deadline-banner" id="deadlineBanner">
+  Registrace otevřena do <span>10. března 2026</span> &nbsp;·&nbsp; <span id="deadlineCountdown"></span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pattern">
+    <svg preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(201,168,76,0.05)" stroke-width="1"/>
+        </pattern>
+        <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+          <circle cx="15" cy="15" r="1" fill="rgba(201,168,76,0.08)"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+      <rect width="100%" height="100%" fill="url(#dots)"/>
+    </svg>
+    <div class="glow-orb orb1"></div>
+    <div class="glow-orb orb2"></div>
+  </div>
+
+  <div class="hero-33-bg">33</div>
+
+  <div class="hero-content">
+    <div class="tour-eyebrow">Pepča Kliment &nbsp;·&nbsp; 33rd Birthday</div>
+    <h1 class="hero-title">The 33<br><em>Tour</em></h1>
+    <div class="hero-tagline">Three Stops &nbsp;·&nbsp; One Legend</div>
+    <div class="hero-meta">
+      <span class="hero-badge">28. 3. 2026</span>
+      <span class="hero-badge">Ostrava &amp; Katowice</span>
+    </div>
+    <div class="countdown-wrap">
+      <div class="cd-unit"><div class="cd-num" id="cd-days">--</div><div class="cd-label">Dnů</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><div class="cd-num" id="cd-hours">--</div><div class="cd-label">Hodin</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><div class="cd-num" id="cd-mins">--</div><div class="cd-label">Minut</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><div class="cd-num" id="cd-secs">--</div><div class="cd-label">Sekund</div></div>
+    </div>
+  </div>
+
+  <!-- SON POINTER -->
+  <a href="#registrace" style="text-decoration:none;">
+  <div class="son-wrap">
+    <div class="son-bubble">Přihlas se!</div>
+    <img src="img/son.jpg" alt="Pepčův syn ukazuje dolů"/>
+  </div>
+  </a>
+
+  <div class="hero-scroll-hint">scroll</div>
+</section>
+
+<!-- STOPS -->
+<div class="section-wrap">
+  <div class="section-eyebrow">— Tři zastávky · Celý den —</div>
+
+  <div class="stop" data-stop>
+    <div class="stop-num-col">
+      <div class="stop-index">01</div>
+      <div class="stop-time">09:30 – 11:30</div>
+    </div>
+    <div class="stop-body">
+      <h2 class="stop-title">Brunch & dětský ráj</h2>
+      <div class="stop-venue"><a href="https://maps.google.com/?q=CoKafé+DOV+Ostrava" target="_blank">CoKafé DOV · Ostrava</a></div>
+      <a class="map-link" href="https://maps.google.com/?q=CoKafé+DOV+Ostrava" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Otevřít v mapách
+      </a>
+      <p class="stop-desc">Pohodový ranní start s dobrým jídlem, kávou a krásným novým dětským koutkem. Ideální pro celé rodiny, děti mají kde řádit, dospělí kde si popovídat.</p>
+      <div class="tags">
+        <span class="tag">Jídlo &amp; pití</span>
+        <span class="tag kids">Dětský koutek ✓</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stop" data-stop>
+    <div class="stop-num-col">
+      <div class="stop-index">02</div>
+      <div class="stop-time">15:00 – 18:00</div>
+    </div>
+    <div class="stop-body">
+      <h2 class="stop-title">Americano Padel Tournament</h2>
+      <div class="stop-venue"><a href="https://maps.google.com/?q=Padel+Academy+Katowice" target="_blank">Padel Academy Katowice</a></div>
+      <a class="map-link" href="https://maps.google.com/?q=Padel+Academy+Katowice" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Otevřít v mapách
+      </a>
+      <p class="stop-desc">Americano formát, rotující páry, každý hraje s každým. Nechceš hrát? Fandění z tribun. Rakety zajistíme na místě. Dětský koutek k dispozici, ale dozor je na vás.</p>
+      <div class="tags">
+        <span class="tag">Padel Tennis</span>
+        <span class="tag">Americano formát</span>
+        <span class="tag kids">Dětský koutek (hlídání na vás)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stop" data-stop>
+    <div class="stop-num-col">
+      <div class="stop-index">03</div>
+      <div class="stop-time">20:00 – 00:00</div>
+    </div>
+    <div class="stop-body">
+      <h2 class="stop-title">Night Cap</h2>
+      <div class="stop-venue"><a href="https://maps.google.com/?q=Nová+Plzeňka+Nové+Lauby+Ostrava" target="_blank">Nová Plzeňka · Nové Lauby · Ostrava</a></div>
+      <a class="map-link" href="https://maps.google.com/?q=Nová+Plzeňka+Nové+Lauby+Ostrava" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Otevřít v mapách
+      </a>
+      <p class="stop-desc">Finální zastávka The 33 Tour v nové Plzeňce v centru Ostravy. Pivo, přátelé, přípitek na třiatřicítku.</p>
+      <div class="tags">
+        <span class="tag">Večerní program</span>
+        <span class="tag">Nové Lauby</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAMILY SECTION -->
+<section class="family-section">
+  <img class="family-img" src="img/family.jpg" alt="Pepčova rodina"/>
+  <div class="family-overlay">
+    <h2>Těšíme se <em>na vás všechny</em></h2>
+    <p>Celý den strávíme spolu, od brunche přes padel až po pivo. Přijď na co můžeš, každá zastávka stojí za to.</p>
+  </div>
+</section>
+
+<!-- PEPCA SECTION -->
+<section class="pepca-section">
+  <div class="pepca-inner">
+    <div class="pepca-portrait-col">
+      <div class="pepca-portrait-wrap">
+        <img src="img/pepca.jpg" alt="Pepča Kliment" class="pepca-portrait"/>
+      </div>
+    </div>
+    <div class="pepca-text">
+      <h2>O <em>oslavenci</em></h2>
+      <p>Pepča Kliment. Táta, manžel, padel hráč a celoživotní Gunner. Přes týden pomáhá majitelům firem prodat jejich životní dílo za maximální hodnotu, přes víkend hraje padel a optimisticky sleduje Arsenal.</p>
+      <p>Ve firmě ho znají jako strategického finančníka. Kamarádi ho znají jako dobrosrdečného pařmena s humorem, který je tak plochý, že ho polovina nepochopí a druhá polovina předstírá, že ano.</p>
+      <p>33 let. Žádná krize středního věku, jen větší narozeninová party rozložená přes celý den a dvě země.</p>
+      <div class="arsenal-badge-inline">
+        <img src="img/arsenal.jpg" alt="Pepča u Emirates"/>
+        <span>⚽ Gunner for life · Emirates Stadium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARPOOLING -->
+<div class="section-wrap" style="padding-top:0;">
+  <div class="carpool-box">
+    <h3>🚗 Carpooling do Katowic</h3>
+    <p>Padel Academy Katowice je cca 45 minut autem z Ostravy. Domluvte se na sdílené jízdě přímo ve skupině nebo se zeptejte ostatních přihlášených. Čím víc lidí v autě, tím větší zábava cestou.</p>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">— Časté otázky —</div>
+    <div class="faq-list">
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Musím umět hrát padel?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Vůbec ne. Americano formát je ideální pro všechny úrovně, rotují páry, každý si zahraje s každým. Rakety zajistíme na místě.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Jak se dostanu z Ostravy do Katowic?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Autem cca 45 minut po dálnici. Domluvte se na sdílené jízdě s ostatními, viz sekce Carpooling výše. Veřejná doprava je také možná, ale auto je pohodlnější.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Kde zaparkuji u Padel Academy Katowice?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Řiď se navigací na Padel Academy Katowice. U vjezdu projedeš závorou, pak objeď halu dokola, parkování najdeš na druhé straně.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Je nutné být na všech třech zastávkách?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Vůbec ne. Proto je registrace po zastávkách, přijď jen na brunch, jen na padel nebo jen na večer. Každá zastávka je samostatná a skvělá i bez zbytku.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Mohu vzít děti?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Na brunch v CoKafé DOV rozhodně, je tam krásný nový dětský koutek. Na padel v Katowicích také, ale hlídání je čistě na vás, na kurtu se soustředíme na hru.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Co si vzít na padel?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Sportovní oblečení a tenisky nebo padel boty. Rakety zajistíme nebo půjčíme přímo na místě, nemusíš řešit výbavu.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Jak přihlásím i svého partnera nebo partnerku?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Ve formuláři níže nastav počet osob na 2 (nebo více) a vyplň jména za celou skupinu najednou. Nemusí se každý přihlašovat zvlášť.</p></div>
+      </div>
+
+      <div class="faq-item" data-faq>
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Plánuji jít na večer, mám domluvit hlídání?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Rozhodně doporučujeme. Večer v Plzeňce bude bez dětí, takže nezapomeňte včas oslovit babičky nebo jiné dobrovolníky. Začíná to ve 20:00, takže je čas se připravit.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRATION -->
+<section class="reg-section" id="registrace">
+  <div class="section-wrap">
+    <div class="reg-header">
+      <h2>Přihlás se <em>na tour</em></h2>
+      <p id="regSubtitle">Vyber zastávky, které nechceš vynechat</p>
+    </div>
+
+    <div style="max-width:640px;margin:0 auto;" id="regFormWrap">
+      <div class="form-group">
+        <label class="form-label">Kolik vás přijde?</label>
+        <div class="person-count-row">
+          <button type="button" class="cnt-btn" onclick="changeCount(-1)">−</button>
+          <span id="personCount">1</span>
+          <button type="button" class="cnt-btn" onclick="changeCount(1)">+</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Jména účastníků</label>
+        <div id="namesInputs">
+          <input type="text" class="name-input" placeholder="Jméno osoby 1…" autocomplete="off"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Zúčastníme se:</label>
+        <div class="stop-choices">
+
+          <div class="stop-choice" data-part="brunch" onclick="toggleStopChoice(this)">
+            <div class="sc-header">
+              <div class="sc-box"></div>
+              <div class="sc-info">
+                <div class="sc-title">Stop 01 – Brunch</div>
+                <div class="sc-meta">9:30–11:30 · CoKafé DOV · Ostrava</div>
+              </div>
+            </div>
+            <div class="kids-toggle" id="kidsB" onclick="event.stopPropagation();toggleKids(this)">
+              <div class="kt-box"></div>
+              <span>+ přivedu děti</span>
+            </div>
+          </div>
+
+          <div class="stop-choice" data-part="padel" onclick="toggleStopChoice(this)">
+            <div class="sc-header">
+              <div class="sc-box"></div>
+              <div class="sc-info">
+                <div class="sc-title">Stop 02 – Padel Tournament</div>
+                <div class="sc-meta">15:00–18:00 · Padel Academy Katowice</div>
+              </div>
+            </div>
+            <div class="padel-roles" id="padelRolesContainer"></div>
+            <div class="kids-toggle" id="kidsP" onclick="event.stopPropagation();toggleKids(this)">
+              <div class="kt-box"></div>
+              <span>+ přivedu děti (hlídám sám/a)</span>
+            </div>
+          </div>
+
+          <div class="stop-choice" data-part="bar" onclick="toggleStopChoice(this)">
+            <div class="sc-header">
+              <div class="sc-box"></div>
+              <div class="sc-info">
+                <div class="sc-title">Stop 03 – Night Cap</div>
+                <div class="sc-meta">20:00–00:00 · Nová Plzeňka · Nové Lauby · Ostrava</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submitBtn" onclick="submitReg()">Přihlásit skupinu na tour</button>
+      <div class="form-msg" id="formMsg"></div>
+    </div>
+
+    <!-- SHARE -->
+    <div class="share-wrap">
+      <a class="share-btn" id="waBtn" href="#" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.549 4.109 1.508 5.84L0 24l6.335-1.488A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.002-1.368l-.36-.214-3.724.875.936-3.619-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+        Sdílet přes WhatsApp
+      </a>
+      <button class="share-btn copy-btn" onclick="copyLink()">📋 Kopírovat odkaz</button>
+    </div>
+  </div>
+</section>
+
+<!-- ATTENDEES -->
+<section>
+  <div class="section-wrap">
+    <div class="att-header">
+      <h2>Kdo přijede</h2>
+      <p>Živý přehled přihlášených, aktualizuje se v reálném čase</p>
+    </div>
+    <div class="att-cols">
+      <div class="att-col">
+        <div class="att-col-name">Stop 01 – Brunch</div>
+        <div class="att-col-time">9:30 – 11:30</div>
+        <div class="att-big-num" id="cntBrunch">0</div>
+        <ul class="att-list" id="lstBrunch"></ul>
+      </div>
+      <div class="att-col">
+        <div class="att-col-name">Stop 02 – Padel</div>
+        <div class="att-col-time">15:00 – 18:00</div>
+        <div class="att-big-num" id="cntPadel">0</div>
+        <ul class="att-list" id="lstPadel"></ul>
+      </div>
+      <div class="att-col">
+        <div class="att-col-name">Stop 03 – Night Cap</div>
+        <div class="att-col-time">20:00 – 00:00</div>
+        <div class="att-big-num" id="cntBar">0</div>
+        <ul class="att-list" id="lstBar"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMIN -->
+<section class="admin-section">
+  <div class="section-wrap" style="padding-top:64px;padding-bottom:64px;">
+    <button class="admin-toggle-btn" onclick="toggleAdmin()">⚙ Admin přehled</button>
+    <div class="admin-panel" id="adminPanel">
+      <div class="pin-gate" id="pinGate">
+        <p>Zadej PIN pro přístup</p>
+        <input class="pin-input" id="pinInput" type="password" maxlength="4" placeholder="····" onkeydown="if(event.key==='Enter')checkPin()"/>
+        <button class="pin-btn" onclick="checkPin()">Vstoupit</button>
+        <div class="pin-error" id="pinError"></div>
+      </div>
+      <div class="admin-content" id="adminContent">
+        <div class="admin-summary" id="adminSummary"></div>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Jméno</th><th>Brunch</th><th>Padel</th><th>Role</th><th>Bar</th><th>Děti B</th><th>Děti P</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="adminBody"></tbody>
+        </table>
+        <button class="export-btn" onclick="exportCSV()">↓ Exportovat CSV</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>The 33 Tour &nbsp;·&nbsp; Pepča Kliment &nbsp;·&nbsp; 28. 3. 2026</footer>
+
+<script src="js/info.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(# Compare the 3 copies structurally - extract just the first 80 chars of each line # Copy 1: lines 1-392, Copy 2: lines 393-784, Copy 3: lines 785-1178 # Check if copies are identical by comparing sed -n ''1,390p'' \"\"c:/Users/klime/OneDrive/Plocha/narozk/info.html\"\" sed -n ''393,782p'' \"\"c:/Users/klime/OneDrive/Plocha/narozk/info.html\"\" sed -n ''785,1176p'' \"\"c:/Users/klime/OneDrive/Plocha/narozk/info.html\"\" echo \"\"=== Line counts ===\"\" wc -l /tmp/copy1.txt /tmp/copy2.txt /tmp/copy3.txt echo \"\"=== Diff copy1 vs copy2 ===\"\" diff /tmp/copy1.txt /tmp/copy2.txt)",
+      "Bash(head -20 \"c:/Users/klime/OneDrive/Plocha/narozk/index \\(4\\).html\")",
+      "Bash(python3 -c \":*)",
+      "Bash(du -sh \"c:/Users/klime/OneDrive/Plocha/narozk\"/* \"c:/Users/klime/OneDrive/Plocha/narozk\"/**/*)",
+      "Bash(python -m http.server 8080)",
+      "Bash(curl -s -L \"https://script.google.com/macros/s/AKfycbw4OBUsZutD1CPYjMqw0-nRAz6NRdpTpK2xxqthY1AAToO0PMFL74IKlBglkF_jXJNm/exec\")",
+      "Bash(curl -s -L -X POST \"https://script.google.com/macros/s/AKfycbw4OBUsZutD1CPYjMqw0-nRAz6NRdpTpK2xxqthY1AAToO0PMFL74IKlBglkF_jXJNm/exec\" -H \"Content-Type: text/plain\" -d '{\"\"attendees\"\":[]}')",
+      "Bash(git config user.email \"kliment.josef@email.cz\")",
+      "Bash(git config user.name \"klimentjosef-netizen\")",
+      "Bash(git add -A)",
+      "Bash(git commit -m \"Initial commit - The 33 Tour\")",
+      "Bash(git branch -M main)",
+      "Bash(git remote add origin https://github.com/klimentjosef-netizen/the-33-tour.git)",
+      "Bash(git push -u origin main)"
+    ]
+  }
+}
