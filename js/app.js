@@ -246,7 +246,9 @@ async function submitReg() {
     renderAttendees(data);
     window.location.href = 'info.html';
   } catch(e) {
+    console.error('submitReg error:', e);
     showMsg('Chyba při ukládání: ' + e.message, 'error');
+    alert('Chyba při ukládání: ' + e.message);
     btn.disabled = false;
     btn.textContent = 'Přihlásit se na tour';
   }

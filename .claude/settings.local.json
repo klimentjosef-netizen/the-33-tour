@@ -16,7 +16,12 @@
       "Bash(git remote add origin https://github.com/klimentjosef-netizen/the-33-tour.git)",
       "Bash(git push -u origin main)",
       "Bash(git commit -m \"Fix normalizeAttendee and add auto-refresh\")",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(git pull --rebase origin main)",
+      "Bash(git stash)",
+      "Bash(git stash pop)",
+      "WebFetch(domain:klimentjosef-netizen.github.io)",
+      "Bash(git commit -m \"Add cache-busting and better error reporting\")"
     ]
   }
 }
