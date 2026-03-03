@@ -134,8 +134,8 @@ function normalizeAttendee(p) {
   if (!p || typeof p !== 'object') return null;
   // GAS returns capitalized keys (Name, Parts, PadelRole, KidsB, KidsP)
   // normalize everything to lowercase keys
-  if (p.Name !== undefined && p.name === undefined) p.name = p.Name;
-  if (p.Parts !== undefined && p.parts === undefined) p.parts = p.Parts;
+  if (p.Name !== undefined) p.name = p.Name;
+  if (p.Parts !== undefined) p.parts = p.Parts;
   if (p.PadelRole !== undefined && p.padelRole === undefined) p.padelRole = p.PadelRole;
   if (p.KidsB !== undefined && p.kidsB === undefined) p.kidsB = p.KidsB;
   if (p.KidsP !== undefined && p.kidsP === undefined) p.kidsP = p.KidsP;

@@ -14,7 +14,9 @@
       "Bash(git commit -m \"Initial commit - The 33 Tour\")",
       "Bash(git branch -M main)",
       "Bash(git remote add origin https://github.com/klimentjosef-netizen/the-33-tour.git)",
-      "Bash(git push -u origin main)"
+      "Bash(git push -u origin main)",
+      "Bash(git commit -m \"Fix normalizeAttendee and add auto-refresh\")",
+      "Bash(git push)"
     ]
   }
 }
