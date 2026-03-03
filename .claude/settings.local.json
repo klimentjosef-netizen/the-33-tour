@@ -23,7 +23,8 @@
       "WebFetch(domain:klimentjosef-netizen.github.io)",
       "Bash(git commit -m \"Add cache-busting and better error reporting\")",
       "Bash(git commit -m \"Remove carpooling section and share buttons\")",
-      "Bash(git commit -m \"Change first screen link to redirect to info.html\")"
+      "Bash(git commit -m \"Change first screen link to redirect to info.html\")",
+      "Bash(git commit -m \"Add FAQ about gifts\")"
     ]
   }
 }
