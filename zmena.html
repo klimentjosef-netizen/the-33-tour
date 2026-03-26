@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POZOR ZMĚNA! – The 33 Tour</title>
+<meta property="og:title" content="POZOR ZMĚNA! – The 33 Tour">
+<meta property="og:description" content="Změna místa brunche! Místo CoKafé DOV se potkáme v Malö kafe. Čas: 9:00–12:00.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #080808;
+  --cream: #f4efe6;
+  --gold: #c9a84c;
+  --rust: #c4511a;
+  --muted: #7a7060;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { height:100%; }
+body {
+  background:var(--black); color:var(--cream);
+  font-family:'DM Sans',sans-serif; font-weight:300;
+  min-height:100vh; display:flex; align-items:center; justify-content:center;
+  overflow-x:hidden; padding:24px;
+}
+body::before {
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:1000; opacity:.025;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+.orb { position:fixed; border-radius:50%; filter:blur(100px); pointer-events:none; }
+.orb1 { width:500px; height:500px; background:rgba(196,81,26,0.08); top:-150px; right:-100px; animation:d1 10s ease-in-out infinite alternate; }
+.orb2 { width:400px; height:400px; background:rgba(201,168,76,0.06); bottom:-100px; left:-80px; animation:d2 12s ease-in-out infinite alternate; }
+@keyframes d1 { to { transform:translate(-60px,80px); } }
+@keyframes d2 { to { transform:translate(40px,-60px); } }
+
+.card {
+  position:relative; z-index:2;
+  max-width:520px; width:100%; text-align:center;
+  animation:rise .8s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes rise { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+
+.badge {
+  display:inline-block;
+  border:2px solid var(--rust);
+  color:var(--rust);
+  font-family:'Bebas Neue',sans-serif;
+  font-size:14px; letter-spacing:6px;
+  padding:8px 20px;
+  margin-bottom:32px;
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.6; } }
+
+.title {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(42px,9vw,72px);
+  line-height:1;
+  margin-bottom:12px;
+  letter-spacing:-1px;
+}
+.title em { font-style:italic; color:var(--gold); }
+
+.subtitle {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:15px; letter-spacing:6px;
+  color:var(--muted);
+  margin-bottom:48px;
+}
+
+.change-box {
+  border:1px solid rgba(201,168,76,0.2);
+  padding:32px 24px;
+  margin-bottom:40px;
+  position:relative;
+}
+.change-box::before {
+  content:''; position:absolute; inset:0;
+  background:rgba(201,168,76,0.03);
+  pointer-events:none;
+}
+
+.change-row {
+  display:flex; align-items:flex-start; gap:16px;
+  text-align:left; position:relative; z-index:1;
+}
+.change-row + .change-row { margin-top:24px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.06); }
+
+.change-label {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:11px; letter-spacing:3px;
+  color:var(--muted);
+  min-width:60px; padding-top:2px;
+}
+.change-old {
+  text-decoration:line-through; color:var(--muted); opacity:.5;
+  font-size:14px; margin-bottom:4px;
+}
+.change-new {
+  font-size:18px; font-weight:400; color:var(--cream);
+}
+.change-new .highlight { color:var(--gold); font-weight:500; }
+
+.map-btn {
+  display:inline-flex; align-items:center; gap:6px;
+  margin-top:8px; font-size:12px; color:var(--gold); opacity:.7;
+  text-decoration:none; border-bottom:1px solid rgba(201,168,76,0.3);
+  padding-bottom:2px; transition:opacity .2s;
+}
+.map-btn:hover { opacity:1; }
+.map-btn svg { width:14px; height:14px; }
+
+.note {
+  font-size:14px; color:var(--muted);
+  margin-bottom:40px; line-height:1.7;
+}
+
+.btn {
+  display:inline-block;
+  background:var(--gold); color:var(--black);
+  font-family:'Bebas Neue',sans-serif;
+  font-size:18px; letter-spacing:4px;
+  padding:16px 48px;
+  text-decoration:none;
+  transition:transform .2s, box-shadow .2s;
+}
+.btn:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(201,168,76,0.25); }
+
+.footer-note {
+  margin-top:32px; font-size:12px; color:var(--muted); opacity:.5;
+}
+</style>
+</head>
+<body>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="card">
+  <div class="badge">POZOR ZMĚNA</div>
+
+  <div class="title">Stop 01 se<br><em>stěhuje.</em></div>
+  <div class="subtitle">Sobota 28. března 2026</div>
+
+  <div class="change-box">
+    <div class="change-row">
+      <div class="change-label">Místo</div>
+      <div>
+        <div class="change-old">CoKafé DOV, Ostrava</div>
+        <div class="change-new"><span class="highlight">Malö kafe</span>, Ostrava</div>
+        <a class="map-btn" href="https://www.google.com/maps/place/Mal%C3%B6+kafe/@49.8365459,18.2937158,17z" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Otevřít v mapách
+        </a>
+      </div>
+    </div>
+    <div class="change-row">
+      <div class="change-label">Čas</div>
+      <div>
+        <div class="change-old">9:30 – 11:30</div>
+        <div class="change-new"><span class="highlight">9:00 – 12:00</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Velký dětský koutek zůstává. Přijďte kdy chcete, odejděte kdy chcete.</p>
+
+  <a class="btn" href="info.html">Přejít na web</a>
+
+  <div class="footer-note">The 33 Tour – Pepča Kliment</div>
+</div>
+
+</body>
+</html>
