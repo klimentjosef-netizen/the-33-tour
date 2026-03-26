@@ -16,7 +16,7 @@ function escapeHtml(str) {
 
 /* === COUNTDOWN === */
 function startCountdown() {
-  const target = new Date('2026-03-28T09:30:00+01:00');
+  const target = new Date('2026-03-28T09:00:00+01:00');
   const els = {
     days: document.getElementById('cd-days'),
     hours: document.getElementById('cd-hours'),
